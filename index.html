@@ -4,6 +4,7 @@
     <script>
       var _paq = window._paq = window._paq || [];
       /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      /*
       _paq.push(['trackPageView']);
       _paq.push(['enableLinkTracking']);
       (function() {
@@ -13,8 +14,160 @@
         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
         g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
       })();
+      */
     </script>
     <!-- End Matomo Code -->
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Gentium+Plus&family=Germania+One&display=swap');
+
+      body {
+        font-family: 'Gentium Plus';
+        color: #f5f5f5;
+        background-color: #101010;
+        font-size: 1.2rem;
+        margin: 0;
+      }
+
+      .content {
+        margin: 0 auto;
+        max-width: 1024px;
+      }
+
+      .press {
+        position: absolute;
+        right: 40px;
+        top: 20px;
+        text-decoration: none;
+        color: #f5f5f5;
+        font-family: 'Germania One', cursive;
+        font-size: 1.5rem;
+      }
+
+      .press:hover {
+        text-decoration: underline;
+      }
+
+      .hero {
+        background-image: url('images/hero.jpg');
+        height: 600px;
+        background-size: cover;
+        position: relative;
+        text-shadow: 0 0 10px black;
+        background-position: center;
+      }
+
+      .logo {
+        position: absolute;
+        left: 40px;
+        top: 20px;
+      }
+
+      .title, .subtitle {
+        font-family: 'Germania One', cursive;
+        text-transform: uppercase;
+      }
+
+      .title {
+        font-size: 7rem;
+        line-height: 6rem;
+      }
+
+      .subtitle {
+        font-size: 2rem;
+      }
+
+      .signup {
+        text-align: center;
+        padding: 10px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        background-color: #132020;
+        padding-bottom: 20px;
+      }
+
+      .input-email {
+        padding: 0 10px;
+        width: 250px;
+        height: 38px;
+        border-radius: 2px;
+        border: 0;
+        font-size: 1.2rem;
+      }
+
+      .signup-button {
+        margin-left: 10px;
+        padding: 5px 10px 5px 10px;
+        background-color: #e55549;
+        border-radius: 2px;
+        appearance: none;
+        border: none;
+        font-family: Germania One;
+        font-size: 1.5rem;
+        color: #3a0904;
+      }
+
+      .signup-button:hover {
+        filter: brightness(0.9);
+      }
+
+      .signup-button:active {
+        filter: brightness(0.7);
+      }
+
+      .signup-form {
+        margin: 0;
+        margin-top: 10px;
+        display: inline-flex;
+        justify-content: center;
+        padding: 10px;
+        background-color: #375d5d;
+        border-radius: 2px;
+      }
+
+      .short-desc {
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 40px;
+      }
+
+      .long-desc {
+        padding: 20px;
+      }
+
+      .screenshots {
+        background-color: #132020;
+      }
+
+      .screenshot-detail .screenshot {
+        display: none;
+      }
+
+      .screenshot-detail .screenshot.visible {
+        display: block;
+        max-width: 100%;
+        border-radius: 2px;
+      }
+
+      .screenshot-tiles {
+        display: flex;
+        margin-bottom: 5px;
+        overflow-x: auto;
+      }
+
+      .screenshot-tiles .screenshot {
+        max-width: 200px;
+        border-radius: 2px;
+      }
+
+      .screenshot-tiles .screenshot:not(:first-child) {
+        margin-left: 5px;
+      }
+
+      .footer {
+      }
+
+    </style>
 	</head>
 	<body>
 		<noscript>
@@ -22,6 +175,103 @@
 			<img referrerpolicy="no-referrer-when-downgrade" src="https://analytics.okapi.games/matomo.php?idsite=1&amp;rec=1" style="border:0" alt="" />
 			<!-- End Matomo -->
 		</noscript>
-		hello world
+
+    <div class="hero">
+      <div class="menu">
+        <a class="press" href="https://press.schemersgame.com">Press</a>
+      </div>
+      <div class="logo">
+        <div class="title">schemers</div>
+        <div class="subtitle">save the kingdom. burn it down.</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="signup">
+        <div>
+          Sign up for access to the <u>beta</u> and updates!
+        </div>
+        <form class="signup-form">
+          <input class="input-email" type="email" placeholder="email" required/>
+          <button class="signup-button" type="submit">Sign up</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="content">
+
+      <div class="short-desc section">
+        The ailing King has no heir, barbarians at the gate, peasantry in revolt. Petty lords war over petty greivances.<br><br>
+        Who will climb the ladder for ultimate power, and who will fall?
+      </div>
+
+      <div class="section screenshots">
+        <div class="screenshot-tiles">
+          <img class="screenshot" data-id="0" src="images/screenshot_1.jpg"/>
+          <img class="screenshot" data-id="1" src="images/screenshot_2.jpg"/>
+          <img class="screenshot" data-id="2" src="images/screenshot_3.jpg"/>
+          <img class="screenshot" data-id="3" src="images/screenshot_4.jpg"/>
+          <img class="screenshot" data-id="4" src="images/screenshot_5.jpg"/>
+        </div>
+        <div class="screenshot-detail">
+          <img class="screenshot visible" data-id="0" src="images/screenshot_1.jpg"/>
+          <img class="screenshot" data-id="1" src="images/screenshot_2.jpg"/>
+          <img class="screenshot" data-id="2" src="images/screenshot_3.jpg"/>
+          <img class="screenshot" data-id="3" src="images/screenshot_4.jpg"/>
+          <img class="screenshot" data-id="4" src="images/screenshot_5.jpg"/>
+        </div>
+      </div>
+
+      <div class="long-desc section">
+        <div class="desc">
+          <p>
+            Schemers is a narrative strategy video game, in which players compete for power in the royal court.
+          </p>
+          <p>
+            <b>INFLUENCE, EXPLOIT, COERCE:</b> Gain leverage over characters and use their abilities.<br>
+            <b>SCHEME AGAINST YOUR FOES:</b> Play Schemes and manipulate the court to amass power and outwit your enemies.<br>
+            <b>KINGDOM ON THE BRINK:</b> The kingdom lurches from crisis to crisis, exploit the situation at your peril.
+          </p>
+        </div>
+
+        <div class="features">
+          <ul>
+            <li>Turn-based singleplayer and simultaneous multiplayer</li>
+            <li>Customize your character and your family dynasty</li>
+            <li>Customize your kingdom and its people</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="signup">
+        <div>
+          Sign up for access to the <u>beta</u> and updates!
+        </div>
+        <form class="signup-form">
+          <input class="input-email" type="email" placeholder="email" required/>
+          <button class="signup-button" type="submit">Sign up</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer">
+    </div>
+
+    <script>
+      document.querySelectorAll('.screenshot-tiles .screenshot').forEach(el => {
+        el.addEventListener('mouseover', activate);
+        el.addEventListener('click', activate);
+
+        function activate(e) {
+          const id = +e.target.attributes['data-id'].value;
+
+          document.querySelector(`.screenshot-detail .screenshot.visible`)?.classList.remove('visible');
+          document.querySelector(`.screenshot-detail .screenshot[data-id="${id}"]`)?.classList.add('visible');
+        }
+      });
+    </script>
 	</body>
 </html>
