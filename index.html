@@ -11,7 +11,7 @@
     <meta property="og:image" content="https://schemersgame.com/images/hero.jpg" />
 
 		<!-- Matomo -->
-    <script async>
+    <script>
       var _paq = window._paq = window._paq || [];
       /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
 
@@ -26,33 +26,9 @@
       })();
 
     </script>
-    <script async>
-      document.querySelectorAll('.screenshot-tiles .screenshot').forEach(el => {
-        el.addEventListener('mouseover', activate);
-        el.addEventListener('click', activate);
-
-        function activate(e) {
-          const id = +e.target.attributes['data-id'].value;
-
-          document.querySelector(`.screenshot-detail .screenshot.visible`)?.classList.remove('visible');
-          document.querySelector(`.screenshot-detail .screenshot[data-id="${id}"]`)?.classList.add('visible');
-        }
-      });
-    </script>
-    <script async>
-      function ml_webform_success_5068463() {
-      try {
-          window.top.location.href = 'https://schemersgame.com/signed-up.html';
-        } catch (e) {
-          window.location.href = 'https://schemersgame.com/signed-up.html';
-        }
-      }
-    </script>
-    <script async src="https://groot.mailerlite.com/js/w/webforms.min.js?v08a893c96141fbc55feeeeac1fda7508" type="text/javascript"></script>
-    <script async>
-      fetch("https://assets.mailerlite.com/jsonp/353009/forms/87796430677214611/track-view")
-    </script>
     <!-- End Matomo Code -->
+
+    <script async src="https://groot.mailerlite.com/js/w/webforms.min.js?v08a893c96141fbc55feeeeac1fda7508" type="text/javascript"></script>
 
     <style type="text/css">
       @import url('https://fonts.googleapis.com/css2?family=Gentium+Plus&family=Germania+One&display=swap');
@@ -474,6 +450,32 @@
 
     <div class="footer">
     </div>
+
+    <script>
+      document.querySelectorAll('.screenshot-tiles .screenshot').forEach(el => {
+        el.addEventListener('mouseover', activate);
+        el.addEventListener('click', activate);
+
+        function activate(e) {
+          const id = +e.target.attributes['data-id'].value;
+
+          document.querySelector(`.screenshot-detail .screenshot.visible`)?.classList.remove('visible');
+          document.querySelector(`.screenshot-detail .screenshot[data-id="${id}"]`)?.classList.add('visible');
+        }
+      });
+    </script>
+    <script>
+      function ml_webform_success_5068463() {
+      try {
+          window.top.location.href = 'https://schemersgame.com/signed-up.html';
+        } catch (e) {
+          window.location.href = 'https://schemersgame.com/signed-up.html';
+        }
+      }
+    </script>
+    <script>
+      fetch("https://assets.mailerlite.com/jsonp/353009/forms/87796430677214611/track-view")
+    </script>
 	</body>
 </html>
 
