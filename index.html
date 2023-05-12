@@ -122,6 +122,11 @@
         padding-bottom: 20px;
       }
 
+      .ml-form-horizontalRow {
+        display: flex;
+        justify-content: space-between;
+      }
+
       .input-email,
       .signup #mlb2-5068463.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input {
         padding: 0 10px;
@@ -168,7 +173,7 @@
         display: inline-flex;
         justify-content: center;
         padding: 10px;
-        background-color: #375d5d;
+        background-color: unset;
         border-radius: 2px;
       }
 
@@ -227,6 +232,14 @@
       .footer {
       }
 
+      .break {
+        text-align: center;
+      }
+
+      .break img {
+        max-width: 200px;
+      }
+
       @media (max-device-width: 480px) {
         .signup {
           padding: 0;
@@ -253,6 +266,14 @@
         .signup #mlb2-5068463.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow button {
           font-size: 3rem;
           padding: 10px 20px 10px 20px;
+        }
+
+        .break img {
+          max-width: unset;
+        }
+
+        .hero {
+          height: 1000px;
         }
       }
 
@@ -366,16 +387,22 @@
           <p>
             Schemers is a narrative strategy video game, in which players compete for power in the royal court.
           </p>
+          <div class="break">
+            <img src="images/break.png"/>
+          </div>
           <p>
             <b>INFLUENCE, EXPLOIT, COERCE:</b> Gain leverage over characters and use their abilities.<br>
             <b>SCHEME AGAINST YOUR FOES:</b> Play Schemes and manipulate the court to amass power and outwit your enemies.<br>
             <b>KINGDOM ON THE BRINK:</b> The kingdom lurches from crisis to crisis, exploit the situation at your peril.
           </p>
         </div>
-
+        <div class="break">
+          <img src="images/break.png"/>
+        </div>
         <div class="features">
           <ul>
-            <li>Turn-based singleplayer and simultaneous multiplayer</li>
+            <li>Turn-based Singleplayer</li>
+            <li>Simultaneous Multiplayer</li>
             <li>Customize your character and your family dynasty</li>
             <li>Customize your kingdom and its people</li>
           </ul>
